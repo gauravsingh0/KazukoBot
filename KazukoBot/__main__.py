@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hey there, I'm Kazuko,
+Hey there, I'm Elena,
 
 I am an Anime themed group management bot
 to help maintaining groups with my super advanced features.
@@ -88,7 +88,7 @@ I have lots of handy features such as:
 ‣ Approvals and much more.
 
 So what are you waiting for?
-Add me in your groups and promote me to make me function well[.](https://telegra.ph/file/6d0f29836fda1effbb4ba.jpg)
+Add me in your groups and promote me to make me function well[.](https://telegra.ph/file/cac9c99b007221927659f.jpg)
 """
 buttons = [
     [
@@ -97,7 +97,7 @@ buttons = [
       ],
     [
         InlineKeyboardButton(
-            text="️Add Kazuko to your group", url="t.me/KazukoRobot?startgroup=true",
+            text="️Add Kazuko to your group", url="t.me/Miss_Elena_Robot?startgroup=true",
         ),
     ],
     [ 
@@ -107,7 +107,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey there! My name is Kazuko.
+Hey there! My name is Elena.
 Have a look at the following for an idea of some of
 the things I can help you with.
 Main commands available:
@@ -119,10 +119,10 @@ Main commands available:
  Click on the buttons below to get documentation about specific modules!
 """
 
-KAZUKO_IMG = "https://telegra.ph/file/6d0f29836fda1effbb4ba.jpg"
+KAZUKO_IMG = "https://telegra.ph/file/cac9c99b007221927659f.jpg"
 
 DONATE_STRING =  """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](ko-fi.com/heyaaman) or by contacting @heyaaman \
+ You can support the project by contacting @gauravsingh003 \
 """
 
 IMPORTED = {}
@@ -232,8 +232,8 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Support", url="t.me/KazukoSupportChat"), InlineKeyboardButton(text="Try Inline",switch_inline_query_current_chat=""),
-                  InlineKeyboardButton(text="Updates", url="t.me/KazukoUpdates")]]               
+                [[InlineKeyboardButton(text="Support", url="t.me/elena_support_group"), InlineKeyboardButton(text="Try Inline",switch_inline_query_current_chat=""),
+                  InlineKeyboardButton(text="Updates", url="t.me/elena_updates")]]               
                   
             ),
         )
@@ -366,7 +366,7 @@ def kazuko_about_callback(update, context):
     query = update.callback_query
     if query.data == "kazuko_":
         query.message.edit_text(
-            text="""I'm *Kazuko*, a powerful group management bot built to help you manage your group easily.
+            text="""I'm *Elena*, a powerful group management bot built to help you manage your group easily.
 
 • I can restrict users.
 • I can greet users with customizable welcome messages and even set a group's rules.
@@ -374,10 +374,10 @@ def kazuko_about_callback(update, context):
 • I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
 • I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
 • I check for admins'permissions before executing any command and more stuffs
-\n_Kazuko's licensed under the GNU General Public License v3.0_
-Have any question about Kazuko?, let us know at Kazuko's support chat.
+\n_Elena's licensed under the GNU General Public License v3.0_
+Have any question about Elena?, let us know at Elena's support chat.
 and also almost all modules usage defined in the help menu, checkout by sending /help
-or choosing help button at home menu and report error/bugs at Kazuko's support chat...""",
+or choosing help button at home menu and report error/bugs at Elena's support chat...""",
 
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -385,28 +385,28 @@ or choosing help button at home menu and report error/bugs at Kazuko's support c
                 [
                     [
                         InlineKeyboardButton(
-                            text=" Setup Guide ", url="https://t.me/KazukoUpdates/22",
+                            text=" Federation ", url="https://t.me/gaurboo_federation",
                         ),
                         InlineKeyboardButton(text="T & C", url="https://telegra.ph/Terms-and-Conditions-10-26",
                         ),
                         InlineKeyboardButton(
-                            text="Source code", url="https://github.com/heyaaman/KazukoBot",
+                            text="Source code", url="https://github.com/gauravsingh0/elenarobot02",
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Support", url="https://t.me/KazukoSupportChat",
+                            text="Support", url="https://t.me/elena_support_group",
                         ),
                         InlineKeyboardButton(
-                             text="Updates", url="https://t.me/KazukoUpdates",
+                             text="Updates", url="https://t.me/elena_updates",
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Network", url="https://t.me/Phoenix_Empire/28",
+                            text="Chit-chat", url="https://t.me/gaurboo_federation",
                         ),   
                         InlineKeyboardButton(
-                            text="Gban logs", url="https://t.me/CFC_BotsGban_logs",
+                            text="Gban logs", url="https://t.me/gaurboo_fed_logs",
                         ),   
                     ],     
                     [InlineKeyboardButton(text="Back", callback_data="kazuko_back")],
@@ -427,8 +427,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *kazuko*
-                 \nHere is the [Source Code](https://github.com/heyaaman/KazukoBot) .""",
+            text=""" Hi..🤗 I'm *Elena*
+                 \nHere is the [Source Code](https://github.com/gauravsingh0/elenarobot02) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
